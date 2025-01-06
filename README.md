@@ -80,3 +80,9 @@ class LaundryProcess:
 if __name__ == "__main__":
     LaundryProcess().run()
 ```
+
+# Class LaundryData `RegistrationData`
+- LaundryData Menyimpan data jumlah baju, total harga, nama pelanggan, dan tanggal transaksi: Class ini bertugas untuk menyimpan semua data penting terkait transaksi laundry.
+- Menghitung total harga berdasarkan jumlah baju: Class ini juga bertanggung jawab untuk menghitung total harga berdasarkan tarif yang telah ditentukan.
+
+
