@@ -145,6 +145,7 @@ class LaundryView:
 Penjelasan:
 - `display_table(data)`: Method untuk menampilkan data dalam format tabel.
 - `get_input()`: Method untuk meminta input dari pengguna.
+
   - Menggunakan loop `while` untuk memastikan input yang diberikan adalah angka.
   - Jika input tidak valid, akan ditampilkan pesan error dan meminta pengguna mengisi ulang.
  
@@ -177,9 +178,29 @@ class LaundryProcess:
 Penjelasan: 
 - `__init__(self)`: Konstruktor yang membuat instance dari class LaundryData dan LaundryView.
 - `run(self)`: Method utama untuk menjalankan program.
+
          - Meminta input jumlah baju dari pengguna.
          - Mengatur data jumlah baju dan menghitung harga.
          - Menampilkan hasil dalam bentuk tabel.
+
+# Bagian Main Program
+
+```python
+if __name__ == "__main__":
+    LaundryProcess().run()
+```
+
+Penjelasan: 
+- Bagian ini memastikan bahwa program hanya akan dijalankan jika file Python ini dijalankan langsung, bukan diimpor sebagai modul.
+- `LaundryProcess().run()` memanggil method `run()` untuk memulai program.
+
+# Contoh Input dan Ouput pada Program
+Berikut adalah contoh input dan  output setelah pengguna berhasil memasukkan data:
+
+![Screenshot 2025-01-06 100725](https://github.com/user-attachments/assets/0e0a6ef0-4c3e-498d-905f-7b4a32185b9e)
+
+
+
 
 
 
