@@ -179,9 +179,9 @@ Penjelasan:
 - `__init__(self)`: Konstruktor yang membuat instance dari class LaundryData dan LaundryView.
 - `run(self)`: Method utama untuk menjalankan program.
 
-         - Meminta input jumlah baju dari pengguna.
-         - Mengatur data jumlah baju dan menghitung harga.
-         - Menampilkan hasil dalam bentuk tabel.
+  - Meminta input jumlah baju dari pengguna.
+  - Mengatur data jumlah baju dan menghitung harga.
+  - Menampilkan hasil dalam bentuk tabel.
 
 # Bagian Main Program
 
