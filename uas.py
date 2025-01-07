@@ -25,16 +25,16 @@ class LaundryData:
 
 
 class LaundryView:
-    def display_table(data):
+    def display_table(self, data):
         print("+--------------------+------------------+----------------+-------------+")
         print("|    Nama Pelanggan  |     Tanggal      |    Jumlah Baju | Total Harga |")
         print("+--------------------+------------------+----------------+-------------+")
         print(f"| {data['Nama Pelanggan']:18} | {data['Tanggal']:16} | {data['Jumlah Baju']:14} | Rp {data['Total Harga']:8} |")
         print("+--------------------+------------------+----------------+-------------+")
 
-    def get_input():
+    def get_input(self):
         name = input("Masukkan nama pelanggan: ")
-        date = input
+        date = input("Masukkan tanggal (DD-MM-YYYY): ")
         while True:
             try:
                 num_clothes = int(input("Masukkan jumlah baju yang akan dicuci: "))
@@ -67,3 +67,5 @@ class LaundryProcess:
 if __name__ == "__main__":
     LaundryProcess().run()
 
+            
+       
