@@ -36,7 +36,6 @@ class LaundryData:
 
 
 class LaundryView:
-    @staticmethod
     def display_table(data):
         print("+--------------------+------------------+----------------+-------------+")
         print("|    Nama Pelanggan  |     Tanggal      |    Jumlah Baju | Total Harga |")
@@ -44,7 +43,6 @@ class LaundryView:
         print(f"| {data['Nama Pelanggan']:18} | {data['Tanggal']:16} | {data['Jumlah Baju']:14} | Rp {data['Total Harga']:8} |")
         print("+--------------------+------------------+----------------+-------------+")
 
-    @staticmethod
     def get_input():
         name = input("Masukkan nama pelanggan: ")
         date = input
@@ -123,7 +121,6 @@ Penjelasan:
 
 ```python
 class LaundryView:
-    @staticmethod
     def display_table(data):
         print("+--------------------+------------------+----------------+-------------+")
         print("|    Nama Pelanggan  |     Tanggal      |    Jumlah Baju | Total Harga |")
@@ -131,7 +128,6 @@ class LaundryView:
         print(f"| {data['Nama Pelanggan']:18} | {data['Tanggal']:16} | {data['Jumlah Baju']:14} | Rp {data['Total Harga']:8} |")
         print("+--------------------+------------------+----------------+-------------+")
 
-    @staticmethod
     def get_input():
         name = input("Masukkan nama pelanggan: ")
         date = input
