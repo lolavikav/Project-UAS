@@ -34,25 +34,23 @@ class LaundryData:
             'Total Harga': self.total_price
         }
 
-
 class LaundryView:
-    def display_table(data):
+    def display_table(self, data):
         print("+--------------------+------------------+----------------+-------------+")
         print("|    Nama Pelanggan  |     Tanggal      |    Jumlah Baju | Total Harga |")
         print("+--------------------+------------------+----------------+-------------+")
         print(f"| {data['Nama Pelanggan']:18} | {data['Tanggal']:16} | {data['Jumlah Baju']:14} | Rp {data['Total Harga']:8} |")
         print("+--------------------+------------------+----------------+-------------+")
 
-    def get_input():
+    def get_input(self):
         name = input("Masukkan nama pelanggan: ")
-        date = input
+        date = input("Masukkan tanggal (DD-MM-YYYY): ")
         while True:
             try:
                 num_clothes = int(input("Masukkan jumlah baju yang akan dicuci: "))
                 return name, date, num_clothes
             except ValueError:
                 print("Harap masukkan angka yang valid.")
-
 
 class LaundryProcess:
     def __init__(self):
@@ -85,7 +83,7 @@ if __name__ == "__main__":
 
 ```python
 class LaundryData:
-    def __init__(self):
+def __init__(self):
         self.total_clothes = 0
         self.total_price = 0
         self.customer_name = ""
@@ -107,7 +105,7 @@ class LaundryData:
             'Tanggal': self.date,
             'Jumlah Baju': self.total_clothes,
             'Total Harga': self.total_price
-        }
+        }          
 ```
 Penjelasan:
 - `__init__(self)`: Konstruktor yang menginisialisasi atribut total_clothes (jumlah baju) dan total_price (total harga).
@@ -121,22 +119,23 @@ Penjelasan:
 
 ```python
 class LaundryView:
-    def display_table(data):
+    def display_table(self, data):
         print("+--------------------+------------------+----------------+-------------+")
         print("|    Nama Pelanggan  |     Tanggal      |    Jumlah Baju | Total Harga |")
         print("+--------------------+------------------+----------------+-------------+")
         print(f"| {data['Nama Pelanggan']:18} | {data['Tanggal']:16} | {data['Jumlah Baju']:14} | Rp {data['Total Harga']:8} |")
         print("+--------------------+------------------+----------------+-------------+")
 
-    def get_input():
+    def get_input(self):
         name = input("Masukkan nama pelanggan: ")
-        date = input
+        date = input("Masukkan tanggal (DD-MM-YYYY): ")
         while True:
             try:
                 num_clothes = int(input("Masukkan jumlah baju yang akan dicuci: "))
                 return name, date, num_clothes
             except ValueError:
                 print("Harap masukkan angka yang valid.")
+
 ```
 Penjelasan:
 - `display_table(data)`: Method untuk menampilkan data dalam format tabel.
